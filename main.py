@@ -13,13 +13,13 @@ def iniciar(vez):
 
     audio="awa.wav"
     icono="agua.ico"
-    print ("Hello world")
 
     direccion = path.abspath(path.dirname(__file__))
 
     notification.icon = path.join(direccion, icono)
     notification.audio = path.join(direccion, audio)
     notification.send() 
+    print("Hola, Sergio")
 
 if now.hour==8:
     iniciar("1/8")
